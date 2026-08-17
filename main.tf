@@ -20,7 +20,7 @@ resource "aws_s3_bucket" "data" {
     environment = var.environment
     project     = "orbit-labs"
   }
-}
+
 }
 
 output "bucket_name" {

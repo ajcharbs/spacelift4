@@ -19,10 +19,10 @@ resource "aws_s3_bucket" "data" {
     managedBy   = "Spacelift"
     environment = var.environment
     project     = "orbit-labs"
-    temp        = "temp2"
+    team        = "platform"
   }
-
 }
+
 
 output "bucket_name" {
   value = aws_s3_bucket.data.id
